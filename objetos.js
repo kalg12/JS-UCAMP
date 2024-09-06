@@ -11,7 +11,11 @@ let persona = {
   },
   cursos: ["DWF", "Matemáticas", "Español"],
   saludar: function (nombre) {
-    console.log("Hola " + this.edad);
+    console.log("Hola " + this.nombre);
+  },
+  saludarDeNuevo: () => {
+    let nombre = this.nombre;
+    console.log(`Hola ${nombre}`);
   },
   gritar: () => {
     console.log("Ahhh!!!");
@@ -24,4 +28,5 @@ console.log(typeof persona.isCoach);
 console.log(typeof persona.hobbies);
 console.log(typeof persona.cursos);
 persona.saludar("Kevin Luciano");
+persona.saludarDeNuevo();
 persona.gritar();
