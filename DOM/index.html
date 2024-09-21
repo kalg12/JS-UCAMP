@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haciendo uso del DOM</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 id="cualquierNombre">Mi primer manipulación del DOM</h1>
+    <button onclick="cambiarNombre()">Cambiar texto</button>
+    <button id="miBoton" onclick="agregandoHtml()">Insertar HTML</button>
+    <button onclick="cambiarColor()">Cambiar a otro color</button>
+    <button onclick="cambiarTamanioLetra()">
+      Cambiar tamaño de letra y color
+    </button>
+    <button onclick="anadirLeyenda()">Añadir leyenda</button>
+
+    <h2 id="miTiendaTitulo">Mi tienda</h2>
+    <div id="leyendaMarca"></div>
+    <p>Carrito de compras</p>
+    <p id="cantidadCarrito">0</p>
+    <h3>Laptop Macbook Air $18000</h3>
+    <img
+      src="https://m.media-amazon.com/images/I/71N+DK0pEaL._AC_UF894,1000_QL80_.jpg"
+      alt="Macbook Air"
+    />
+    <button onclick="agregarProducto()">Agregar al carrito</button>
+    <script src="./main.js"></script>
+  </body>
+</html>
